@@ -1,0 +1,306 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    padding: 0;
+    margin: 0;
+}
+
+table {
+    display: inline-block;
+}
+
+.sheet {
+    width: 21cm;
+    height: 29.7cm;
+}
+
+.card-recto {
+    background-color: #000;
+    color: white;
+    width: 7cm;
+    height: 11cm;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.card-verso {
+    background-color: #000;
+    width: 7cm;
+    height: 11cm;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.card-verso img {
+    vertical-align: middle;
+    width: 6.5cm;
+}
+
+.legend {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.game-name {
+    text-align: center;
+    text-transform: uppercase;
+    width: 6.5cm;
+    top: 10.60cm;
+    position: relative;
+    font-size: 10px;
+    color: #777;
+    line-height: 0;
+    font-weight: bold;
+}
+
+.header {
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.character-picture {
+    height: 2cm;
+    overflow: auto;
+    display: inline-block;
+    width: 33%;
+    border-radius: 2px 2px 2px 2px;
+}
+
+.character-picture img {
+    width: 100%;
+}
+
+.character-name {
+    font-size: 21pt;
+    float: right;
+    width: 67%;
+    text-align: center;
+    font-family: "Merriweather Sans"
+}
+
+.move-list {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+}
+
+.moves {
+    background-color: #777;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    line-height: 22px;
+    height: 25px;
+}
+
+.move {
+    border-bottom: solid 1px #666;
+    margin-top: 3px;
+}
+
+.move-name {
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 4px;
+    font-size: 8pt;
+    letter-spacing: 2px;
+    background: linear-gradient(to bottom, #45484d 0%, #000000 100%);
+}
+
+i {
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.butA {
+    background-color: #FF0000;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF0000), to(#FF0000));
+}
+
+.butA:after {
+    content: "A";
+}
+
+.butB {
+    background-color: #FFFF00;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFFF00), to(#FFFF00));
+}
+
+.butB:after {
+    content: "B";
+}
+
+.butC {
+    background-color: #00FF00;
+    background: -webkit-gradient(linear, left top, left bottom, from(#00FF00), to(#00FF00));
+}
+
+.butC:after {
+    content: "C";
+}
+
+.butD {
+    background-color: #428bca;
+    background: -webkit-gradient(linear, left top, left bottom, from(#428bca), to(#428bca));
+}
+
+.butD:after {
+    content: "D";
+}
+
+.butA, .butB, .butC, .butD {
+    font-weight: bold;
+    color: #000000;
+    font-size: 10px;
+    padding: 4px 6px;
+    border-radius: 40px;
+    border: 2px solid #000000;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.qcb {
+    background-image: url('../img/qcb.png');
+}
+
+.qcf {
+    background-image: url('../img/qcf.png');
+}
+
+.d {
+    background-image: url('../img/d.png');
+}
+
+.b {
+    background-image: url('../img/b.png');
+}
+
+.db {
+    background-image: url('../img/db.png');
+}
+
+.df {
+    background-image: url('../img/df.png');
+}
+
+.dp {
+    background-image: url('../img/dp.png');
+}
+
+.f {
+    background-image: url('../img/f.png');
+}
+
+.hcb {
+    background-image: url('../img/hcb.png');
+}
+
+.hcf {
+    background-image: url('../img/hcf.png');
+}
+
+.rdp {
+    background-image: url('../img/rdp.png');
+}
+
+.u {
+    background-image: url('../img/u.png');
+}
+
+.ub {
+    background-image: url('../img/ub.png');
+}
+
+.uf {
+    background-image: url('../img/uf.png');
+}
+
+.qfd {
+    background-image: url('../img/qfd.png');
+}
+
+.qcb, .qcf, .d, .b, .db, .df, .dp, .f, .hcb, .hcf, .rdp, .u, .ub, .uf, .qfd {
+    background-size: 25px 25px;
+    width: 25px;
+    height: 25px;
+}
+
+.plus {
+    font-size: 20px;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.text {
+    font-size: 8px;
+    letter-spacing: 1px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.top-left {
+    width: 5.7cm;
+    height: 5cm;
+    border-right: 0.3cm dotted;
+    border-bottom: 0.3cm dotted;
+}
+
+.bottom-left {
+    width: 5.7cm;
+    height: 5cm;
+    border-right: 0.3cm dotted;
+    border-top: 0.3cm dotted;
+}
+
+.top-center {
+    width: 7cm;
+    height: 5cm;
+    border-bottom: 0.3cm solid;
+}
+
+.top-right {
+    width: 5.7cm;
+    height: 5cm;
+    border-left: 0.3cm dotted;
+    border-bottom: 0.3cm dotted;
+}
+
+.left-side {
+    height: 11cm;
+    width: 5.7cm;
+    border-right: 0.3cm solid;
+}
+
+.right-side {
+    height: 11cm;
+    width: 5.7cm;
+    border-left: 0.3cm solid;
+}
+
+.bottom-center {
+    width: 7cm;
+    height: 5cm;
+    border-top: 0.3cm solid;
+}
+
+.bottom-right {
+    width: 5.7cm;
+    height: 5cm;
+    border-left: 0.3cm dotted;
+    border-top: 0.3cm dotted;
+}
+
+
+.top-left, .top-center, .top-right, .left-side, .right-side, .bottom-left, .bottom-center, .bottom-right {
+    display: inline-block;
+    border-color: black;
+}
