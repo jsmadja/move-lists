@@ -143,7 +143,7 @@ function insertIntoMargins(body, card) {
 function drawMoveList(character, game) {
     var body = $('body');
     var showMargins = false;
-    var showVerso = false;
+    var showVerso = true;
     var rectoCard = recto(character, game);
     var versoCard = verso(game);
     if (showMargins) {

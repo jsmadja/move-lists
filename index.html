@@ -7,8 +7,19 @@
 </head>
 <body>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.js"></script>
+<script type="text/javascript">
+    var games = new Array();
+</script>
+
+<script type="text/javascript" src="js/fatal-fury.js"></script>
+<script type="text/javascript" src="js/fatal-fury-2.js"></script>
 <script type="text/javascript" src="js/fatal-fury-special.js"></script>
-<!--<script type="text/javascript" src="js/garou-motw.js"></script>-->
+
+
+<!--
+<script type="text/javascript" src="js/garou-motw.js"></script>
+
+-->
 <script type="text/javascript" src="js/engine.js"></script>
 
 <div class="legend" style="display:none;">
@@ -45,7 +56,9 @@
 </div>
 <script>
     $( document ).ready(function() {
-        draw(game);
+        games.forEach(function(game){
+            draw(game);
+        });
     });
 </script>
 

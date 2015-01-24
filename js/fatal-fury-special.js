@@ -1,4 +1,4 @@
-game = {
+games.push({
     title: 'Fatal Fury Special',
     cover: 'cover/garou-densetsu-fatal-fury-special-neogeo-cover-3.png',
     characters: [
@@ -114,7 +114,7 @@ game = {
                 {name: 'Club Blow', commands: ['b', '(charge)', 'f', '+', 'A', 'ou', 'C']},
                 {name: 'Club Twist', commands: ['A', 'ou', 'C', '(à répétition)']},
                 {name: 'Sparrow Drop', commands: ['db', '(charge)', 'uf', '+', 'A', 'ou', 'C']},
-                {name: 'Super Power Club', commands: ['db', 'qcf', 'B', 'ou', 'D' ]},
+                {name: 'Super Power Club', commands: ['db', 'qcf', '+', 'B', 'ou', 'D' ]},
                 {name: 'Super Fire Wheel', commands: ['qcf', 'df', 'qcb', 'ub', '+', 'A', 'C']}
             ]
         },
@@ -174,7 +174,7 @@ game = {
                 {name: 'Tornado Upper', commands: ['qcf', '+', 'A', 'ou', 'C']},
                 {name: 'Smash Bomber', commands: ['db', '(charge)', 'f', '+', 'A', 'ou', 'C']},
                 {name: 'Axel Dance', commands: ['A', 'ou', 'C', '(à répétition)']},
-                {name: 'Axel rush', commands: ['b', 'qfd', 'db', 'uf', '+', 'B', 'C']}
+                {name: 'Axel Rush', commands: ['b', 'qfd', 'db', 'uf', '+', 'B', 'C']}
             ]
         },
         {
@@ -190,19 +190,4 @@ game = {
             ]
         }
     ]
-}
-
-/*
- {
- firstname: '',
- lastname: '',
- face: '',
- moves: [
- {name: '', commands: []},
- {name: '', commands: []},
- {name: '', commands: []},
- {name: '', commands: []},
- {name: '', commands: []}
- ]
- }
- */
+});
