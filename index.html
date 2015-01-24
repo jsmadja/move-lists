@@ -57,6 +57,7 @@
 <script>
     $( document ).ready(function() {
         games.forEach(function(game){
+            $('body').append($('<h1>').text(game.title));
             draw(game);
         });
     });
