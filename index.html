@@ -11,10 +11,11 @@
     var games = new Array();
 </script>
 
+
+<script type="text/javascript" src="js/karnov.js"></script>
 <script type="text/javascript" src="js/fatal-fury.js"></script>
 <script type="text/javascript" src="js/fatal-fury-2.js"></script>
 <script type="text/javascript" src="js/fatal-fury-special.js"></script>
-
 
 <!--
 <script type="text/javascript" src="js/garou-motw.js"></script>
@@ -57,7 +58,7 @@
 <script>
     $( document ).ready(function() {
         games.forEach(function(game){
-            $('body').append($('<h1>').text(game.title));
+            //$('body').append($('<h1>').text(game.title));
             draw(game);
         });
     });
