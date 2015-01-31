@@ -8,7 +8,7 @@ games.push({
             face: 'http://valou.ludo.free.fr/NEO/Tarma/guide/fatalfury_terry.jpg',
             moves: [
                 {name: 'Burning Knuckle', commands: ['qcb', '+', 'A']},
-                {name: 'Rising Tackle', commands: ['d', '(charge)', 'u', '+', 'A']},
+                {name: 'Rising Tackle', commands: ['d', 'charge', 'u', '+', 'A']},
                 {name: 'Crack Shot', commands: ['db', 'uf', '+', 'B']},
                 {name: 'Power Wave', commands: ['qcf', '+', 'A']}
             ]
@@ -19,7 +19,7 @@ games.push({
             face: 'http://valou.ludo.free.fr/NEO/Tarma/guide/fatalfury_andy.jpg',
             moves: [
                 {name: 'Slicing Illusion Trust', commands: ['b', 'f', '+', 'A']},
-                {name: 'Dragon Blast', commands: ['d', '(charge)', 'u', '+', 'A']},
+                {name: 'Dragon Blast', commands: ['d', 'charge', 'u', '+', 'A']},
                 {name: 'Sonic Split', commands: ['db', 'uf', '+', 'B']},
                 {name: 'Flying Fist', commands: ['qcf', '+', 'A']}
             ]

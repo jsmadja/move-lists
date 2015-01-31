@@ -9,6 +9,8 @@ table {
     display: inline-block;
 }
 
+/* 6,35 cm x 8,89 cm ; */
+
 .sheet {
     width: 21cm;
     height: 29cm;
@@ -17,16 +19,16 @@ table {
 .card-recto {
     background-color: #000;
     color: white;
-    width: 7cm;
-    height: 11cm;
+    width: 6.35cm;
+    height: 8.89cm;
     display: inline-block;
     vertical-align: top;
 }
 
 .card-verso {
     background-color: #000;
-    width: 7cm;
-    height: 11cm;
+    width: 6.35cm;
+    height: 8.89cm;
     display: inline-block;
     text-align: center;
     vertical-align: top;
@@ -41,7 +43,7 @@ table {
 
 .card-verso img {
     vertical-align: middle;
-    width: 6.5cm;
+    width: 6cm;
 }
 
 .legend {
@@ -52,8 +54,8 @@ table {
 .game-name {
     text-align: center;
     text-transform: uppercase;
-    width: 6.5cm;
-    top: 10.60cm;
+    width: 100%;
+    top: 8.7cm;
     position: relative;
     font-size: 10px;
     color: #777;
@@ -67,10 +69,10 @@ table {
 }
 
 .character-picture {
-    height: 2cm;
+    height: 1.5cm;
     overflow: auto;
     display: inline-block;
-    width: 33%;
+    width: 25%;
     border-radius: 2px 2px 2px 2px;
 }
 
@@ -81,16 +83,16 @@ table {
 .character-name {
     font-size: 17pt;
     float: right;
-    width: 67%;
+    width: 75%;
     text-align: center;
     font-family: "Merriweather Sans";
-    padding-top: 0.3cm;
+    padding-top: 0;
 }
 
 .move-list {
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 2px;
 }
 
 .moves {
@@ -98,8 +100,8 @@ table {
     text-align: center;
     padding-top: 2px;
     padding-bottom: 2px;
-    line-height: 22px;
-    height: 25px;
+    line-height: 18px;
+    height: 20px;
 }
 
 .move {
@@ -111,7 +113,7 @@ table {
     text-align: center;
     padding-top: 2px;
     padding-bottom: 4px;
-    font-size: 8pt;
+    font-size: 7pt;
     letter-spacing: 2px;
     background: linear-gradient(to bottom, #45484d 0%, #000000 100%);
 }
@@ -161,8 +163,8 @@ i {
 .butA, .butB, .butC, .butD {
     font-weight: bold;
     color: #000000;
-    font-size: 10px;
-    padding: 4px 6px;
+    font-size: 8px;
+    padding: 4px 5px;
     border-radius: 40px;
     border: 2px solid #000000;
     margin-right: 2px;
@@ -237,12 +239,15 @@ i {
     background-size: 25px 25px;
     width: 25px;
     height: 25px;
+    margin-top: -2px;
 }
 
 .plus {
     font-size: 20px;
     margin-right: 1px;
     margin-left: 1px;
+    vertical-align: middle;
+    line-height: 18px;
 }
 
 .text {
@@ -267,7 +272,7 @@ i {
 }
 
 .top-center {
-    width: 7cm;
+    width: 6.35cm;
     height: 5cm;
     border-bottom: 0.3cm solid;
 }
@@ -280,19 +285,19 @@ i {
 }
 
 .left-side {
-    height: 11cm;
+    height: 8.89cm;
     width: 5.7cm;
     border-right: 0.3cm solid;
 }
 
 .right-side {
-    height: 11cm;
+    height: 8.89cm;
     width: 5.7cm;
     border-left: 0.3cm solid;
 }
 
 .bottom-center {
-    width: 7cm;
+    width: 6.35cm;
     height: 5cm;
     border-top: 0.3cm solid;
 }

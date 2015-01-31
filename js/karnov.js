@@ -11,7 +11,7 @@ games.push({
                 {name: 'Dynamite Tackle', commands: ['f', 'f', '+', 'A', 'ou', 'B']},
                 {name: 'Wheel Kick', commands: ['qcb', '+', 'C', 'ou', 'D']},
                 {name: 'Flying Wheel Kick', commands: ['(saut)', 'qcb', '+', 'C', 'ou', 'D']},
-                {name: 'Thunder Dynamite Tackle', commands: ['b', '(charge)', 'f', 'f', '+', 'A', 'ou', 'B']}
+                {name: 'Thunder Dynamite Tackle', commands: ['b', 'charge', 'f', 'f', '+', 'A', 'ou', 'B']}
             ]
         },
         {
@@ -31,7 +31,7 @@ games.push({
             moves: [
                 {name: 'Hell Fire', commands: ['qcb', '+', 'A', 'ou', 'B']},
                 {name: 'Vulcan Hook', commands: ['A', 'ou', 'B', 'à répétition']},
-                {name: 'Deshi Kakato', commands: ['d', '(charge)', 'u', '+', 'C', 'ou', 'D']},
+                {name: 'Deshi Kakato', commands: ['d', 'charge', 'u', '+', 'C', 'ou', 'D']},
                 {name: 'Ducking', commands: ['f', 'f', '+', 'C', 'ou', 'D']},
                 {name: 'Step Back', commands: ['f', 'b', '+', 'C', 'ou', 'D']},
                 {name: 'Ultra Vulcan Hook', commands: ['A', 'B', 'C', 'D', '+', 'A', 'ou', 'B', 'à répétition']}
@@ -44,8 +44,8 @@ games.push({
             moves: [
                 {name: 'Mantis Cutter', commands: ['qcf', '+', 'A', 'ou', 'B']},
                 {name: 'Mid-air Mantis Cutter', commands: ['(saut)', 'qcf', '+', 'A', 'ou', 'B']},
-                {name: 'Hakkaku Ken', commands: ['d', '(charge)', 'u', '+', 'A', 'ou', 'B']},
-                {name: 'Sliding Flying Crane Fist', commands: ['d', '(charge)', 'db', 'df', 'f', 'uf', '+', 'A', 'ou', 'B']}
+                {name: 'Hakkaku Ken', commands: ['d', 'charge', 'u', '+', 'A', 'ou', 'B']},
+                {name: 'Sliding Flying Crane Fist', commands: ['d', 'charge', 'db', 'df', 'f', 'uf', '+', 'A', 'ou', 'B']}
             ]
         },
         {
@@ -66,9 +66,9 @@ games.push({
             face: 'http://valou.ludo.free.fr/NEO/Tarma/guide/karnov_jean.jpg',
             moves: [
                 {name: 'Needle Shower', commands: ['A', 'ou', 'B', 'à répétition']},
-                {name: 'Flic Flac', commands: ['d', '(charge)', 'u', 'C', 'ou', 'D']},
-                {name: 'Bar Rose', commands: ['b', '(charge)', 'f', 'A', 'ou', 'B']},
-                {name: 'Rondato', commands: ['df', '(charge)', 'qcb', 'ub', '+', 'C', 'ou', 'D']},
+                {name: 'Flic Flac', commands: ['d', 'charge', 'u', 'C', 'ou', 'D']},
+                {name: 'Bar Rose', commands: ['b', 'charge', 'f', 'A', 'ou', 'B']},
+                {name: 'Rondato', commands: ['df', 'charge', 'qcb', 'ub', '+', 'C', 'ou', 'D']},
                 {name: 'Ultra Needle Shower', commands: ['A', 'B', 'C', 'D', '+', 'A', 'ou', 'B', 'à répétition']}
             ]
         },
@@ -79,9 +79,9 @@ games.push({
             moves: [
                 {name: 'Ippon Seoi', commands: ['hcf', '+', 'A', 'ou', 'B']},
                 {name: 'Mid-air Ippon Seoi', commands: ['(saut)', 'hcf', '+', 'A', 'ou', 'B']},
-                {name: 'Zenten Ukemi', commands: ['b', '(charge)', 'f', '+', 'C', 'ou', 'D']},
-                {name: 'Yamaarashi', commands: ['hcb', '+', 'A', 'ou', 'B', '(au corps à corps)']},
-                {name: ' Kata Guruma', commands: ['uhcf', '+', 'A', 'ou', 'B', '(au corps à corps)']}
+                {name: 'Zenten Ukemi', commands: ['b', 'charge', 'f', '+', 'C', 'ou', 'D']},
+                {name: 'Yamaarashi', commands: ['hcb', '+', 'A', 'ou', 'B', 'corps à corps']},
+                {name: ' Kata Guruma', commands: ['uhcf', '+', 'A', 'ou', 'B', 'corps à corps']}
             ]
         },
         {
@@ -100,10 +100,10 @@ games.push({
             lastname: 'Jade',
             face: 'http://valou.ludo.free.fr/NEO/Tarma/guide/karnov_matlok.jpg',
             moves: [
-                {name: 'Load Hurricane', commands: ['d', '(charge)', 'u', '+', 'C', 'ou', 'D']},
-                {name: 'Spinning Wave', commands: ['b', '(charge)', 'f', '+', 'A', 'ou', 'B']},
-                {name: 'Overhead Kick', commands: ['b', '(charge)', 'f', '+', 'C', 'ou', 'D']},
-                {name: 'Loop Hurricane', commands: ['d', '(charge)', 'u', '+', 'C', 'D', '+', 'C', 'ou', 'D', 'à répétition']}
+                {name: 'Load Hurricane', commands: ['d', 'charge', 'u', '+', 'C', 'ou', 'D']},
+                {name: 'Spinning Wave', commands: ['b', 'charge', 'f', '+', 'A', 'ou', 'B']},
+                {name: 'Overhead Kick', commands: ['b', 'charge', 'f', '+', 'C', 'ou', 'D']},
+                {name: 'Loop Hurricane', commands: ['d', 'charge', 'u', '+', 'C', 'D', '+', 'C', 'ou', 'D', 'à répétition']}
             ]
         },
         {
@@ -124,11 +124,11 @@ games.push({
             lastname: '',
             face: 'http://valou.ludo.free.fr/NEO/Tarma/guide/karnov_marstorius.jpg',
             moves: [
-                {name: 'Kneel Kick', commands: ['b', '(charge)', 'f', '+', 'C', 'ou', 'D']},
-                {name: 'Moonsalt Press', commands: ['d', '(charge)', 'u', '+', 'A', 'ou', 'B']},
-                {name: 'Dash Raliate', commands: ['b', '(charge)', 'f', '+', 'A', 'ou', 'B']},
-                {name: 'Double German', commands: ['hcb', '+', 'A', 'ou', 'B', '(au corps à corps)']},
-                {name: 'Drill Power Slam', commands: ['uhcf', '+', 'A', 'ou', 'B', '(au corps à corps)']}
+                {name: 'Kneel Kick', commands: ['b', 'charge', 'f', '+', 'C', 'ou', 'D']},
+                {name: 'Moonsalt Press', commands: ['d', 'charge', 'u', '+', 'A', 'ou', 'B']},
+                {name: 'Dash Raliate', commands: ['b', 'charge', 'f', '+', 'A', 'ou', 'B']},
+                {name: 'Double German', commands: ['hcb', '+', 'A', 'ou', 'B', 'corps à corps']},
+                {name: 'Drill Power Slam', commands: ['uhcf', '+', 'A', 'ou', 'B', 'corps à corps']}
             ]
         },
         {
@@ -136,10 +136,10 @@ games.push({
             lastname: '',
             face: 'http://valou.ludo.free.fr/NEO/Tarma/guide/karnov_clown.jpg',
             moves: [
-                {name: 'Pick a Card', commands: ['b', '(charge)', 'f', '+', 'A', 'ou', 'B']},
-                {name: 'Head Stump', commands: ['db', '(charge)', 'uf', '+', 'A', 'ou', 'B']},
-                {name: 'Spin Attack', commands: ['db', '(charge)', 'f', '+', 'C', 'ou', 'D']},
-                {name: 'Spin Drop', commands: ['db', '(charge)', 'u', '+', 'C', 'ou', 'D']},
+                {name: 'Pick a Card', commands: ['b', 'charge', 'f', '+', 'A', 'ou', 'B']},
+                {name: 'Head Stump', commands: ['db', 'charge', 'uf', '+', 'A', 'ou', 'B']},
+                {name: 'Spin Attack', commands: ['db', 'charge', 'f', '+', 'C', 'ou', 'D']},
+                {name: 'Spin Drop', commands: ['db', 'charge', 'u', '+', 'C', 'ou', 'D']},
                 {name: 'Axel Rush', commands: ['b', 'f', 'df', 'd','db','uf','+', 'B','C']}
             ]
         },
@@ -151,8 +151,8 @@ games.push({
                 {name: 'Fire Breath', commands: ['f', 'f', '+', 'A', 'ou', 'B']},
                 {name: 'Low Fire Breath', commands: ['f', 'f', '+', 'C', 'ou', 'D']},
                 {name: 'Balloon Attack', commands: ['(saut)', 'hcb', 'uf', '+', 'A', 'ou', 'B']},
-                {name: 'Super 100 Kick', commands: ['b', '(charge)', 'f', '+', 'C', 'ou', 'D']},
-                {name: 'Super Warp (glitch)', commands: ['db', '(charge)', 'df', '+', 'A', 'D']}
+                {name: 'Super 100 Kick', commands: ['b', 'charge', 'f', '+', 'C', 'ou', 'D']},
+                {name: 'Super Warp (glitch)', commands: ['db', 'charge', 'df', '+', 'A', 'D']}
             ]
         },
     ]
