@@ -58,7 +58,7 @@ function createCommand(command) {
         case 'uf':
         case 'qfd':
         case 'uhcf':
-        case '360':
+        case 'troissix':
             commandPart = $('<i>').addClass(command);
             break;
         case '+':
@@ -141,10 +141,10 @@ function insertIntoMargins(body, card) {
     sheet.append(bottomRight());
     return sheet;
 }
-function drawMoveList(character, game) {
-    var body = $('body');
+function drawMoveList(el, character, game) {
+    var body = el ? el : $('body');
 
-    var printMode = document.location.search.indexOf("print") !=-1;
+    var printMode = document.location.search.indexOf("print") != -1;
     var rectoCard = recto(character, game);
     var versoCard = verso(game);
     if (printMode) {

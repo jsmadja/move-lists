@@ -55,9 +55,9 @@ table {
     text-align: center;
     text-transform: uppercase;
     width: 100%;
-    top: 8.7cm;
+    top: 8.75cm;
     position: relative;
-    font-size: 10px;
+    font-size: 7px;
     color: #777;
     line-height: 0;
     font-weight: bold;
@@ -235,7 +235,12 @@ i {
     background-image: url('../img/qfd.png');
 }
 
-.qcb, .qcf, .d, .b, .db, .df, .dp, .f, .hcb, .hcf, .rdp, .u, .ub, .uf, .qfd {
+.troissix {
+    background-image: url('../img/360.png');
+}
+
+
+.qcb, .qcf, .d, .b, .db, .df, .dp, .f, .hcb, .hcf, .rdp, .u, .ub, .uf, .qfd, .troissix {
     background-size: 25px 25px;
     width: 25px;
     height: 25px;

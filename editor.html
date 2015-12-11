@@ -1,0 +1,214 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/main.css">
+    <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.js"></script>
+<script type="text/javascript">
+
+</script>
+
+<script type="text/javascript" src="js/engine.js"></script>
+
+<div class="legend" style="display:inline-block;">
+    <table>
+        <tr>
+            <td><img id="f" src="img/f.png"/></td>
+            <td>f</td>
+        </tr>
+        <tr>
+            <td><img id="df" src="img/df.png"/></td>
+            <td>df</td>
+        </tr>
+        <tr>
+            <td><img id="d" src="img/d.png"/></td>
+            <td>d</td>
+        </tr>
+        <tr>
+            <td><img id="db" src="img/db.png"/></td>
+            <td>db</td>
+        </tr>
+        <tr>
+            <td><img id="b" src="img/b.png"/></td>
+            <td>b</td>
+        </tr>
+        <tr>
+            <td><img id="ub" src="img/ub.png"/></td>
+            <td>ub</td>
+        </tr>
+        <tr>
+            <td><img id="u" src="img/u.png"/></td>
+            <td>u</td>
+        </tr>
+        <tr>
+            <td><img id="uf" src="img/uf.png"/></td>
+            <td>uf</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td><img id="qcf" src="img/qcf.png"/></td>
+            <td>qcf</td>
+        </tr>
+        <tr>
+            <td><img id="hcf" src="img/hcf.png"/></td>
+            <td>hcf</td>
+        </tr>
+        <tr>
+            <td><img id="dp" src="img/dp.png"/></td>
+            <td>dp</td>
+        </tr>
+
+        <tr>
+            <td><img id="qcb" src="img/qcb.png"/></td>
+            <td>qcb</td>
+        </tr>
+        <tr>
+            <td><img id="qfd" src="img/qfd.png"/></td>
+            <td>qfd</td>
+        </tr>
+        <tr>
+            <td><img id="hcb" src="img/hcb.png"/></td>
+            <td>hcb</td>
+        </tr>
+        <tr>
+            <td><img id="rdp" src="img/rdp.png"/></td>
+            <td>rdp</td>
+        </tr>
+
+        <tr>
+            <td><img id="troissix" src="img/360.png"/></td>
+            <td>360</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td><span id="A" class="butA"></span></td>
+            <td><span id="B" class="butB"></span></td>
+            <td><span id="C" class="butC"></span></td>
+            <td><span id="D" class="butD"></span></td>
+            <td><span id="plus">+</span></td>
+            <td><span id="charge">charge</span></td>
+            <td><span id="repet">à répétition</span></td>
+            <td><span id="ou">ou</span></td>
+            <td><span id="saut">saut</span></td>
+        </tr>
+    </table>
+</div>
+<div id="preview-card" style="display: inline-block"></div>
+
+<div id="editor" style="display: block">
+    <input type="text" id="game" placeholder="game">
+    <input type="text" id="firstname" placeholder="firstname">
+    <input type="text" id="lastname" placeholder="lastname">
+    <input type="text" id="face" placeholder="url"
+           value="http://valou.ludo.free.fr/NEO/Tarma/guide/fatalfury_terry.jpg">
+
+    <div id="command">
+        <input type="text" id="command-name" placeholder="name">
+        <button id="confirm">confirm</button>
+        <button id="reset">reset</button>
+    </div>
+
+</div>
+
+
+<textarea rows="10" cols="80" id="preview-js" style="display: block"></textarea>
+
+
+<script>
+    var game = {};
+
+    var command;
+
+    var card = {
+        firstname: '',
+        lastname: '',
+        face: '',
+        moves: []
+    };
+
+    function update() {
+        var $preview = $('#preview-card');
+        $preview.empty();
+        drawMoveList($preview, card, game);
+        $('#preview-js').html(JSON.stringify(card, null, 2));
+    }
+
+    $(document).ready(function () {
+        $('#game').on('keyup', function (ev) {
+            game.title = ev.target.value;
+            update();
+        });
+        $('#firstname').on('keyup', function (ev) {
+            card.firstname = ev.target.value;
+            update();
+        });
+        $('#lastname').on('keyup', function (ev) {
+            card.lastname = ev.target.value;
+            update();
+        });
+        $('#face').on('keyup', function (ev) {
+            card.face = ev.target.value;
+            update();
+        });
+        $('#command-name').on('keyup', function (ev) {
+            command.name = ev.target.value;
+            update();
+        });
+        $('#confirm').on('click', function () {
+            command = {
+                name: '',
+                commands: []
+            };
+            card.moves.push(command);
+            $('#command-name').empty();
+            update();
+        });
+        $('#reset').on('click', function () {
+            command.commands = [];
+            update();
+        });
+        $('#preview-js').on('keyup', function(ev){
+            card = JSON.parse(ev.target.value);
+            update();
+        });
+
+        command = {
+            name: '',
+            commands: []
+        };
+        card.moves.push(command);
+
+        function addOnClick($legend) {
+            for (i in $legend) {
+                var el = $legend[i];
+                if (el.id) {
+                    $('#' + el.id).on('click', function (ev) {
+                        var id = ev.target.id;
+                        if (id == 'plus') {
+                            id = '+';
+                        }
+                        if (id == 'repet' || id == 'ou') {
+                            id = ev.target.innerText;
+                        }
+                        command.commands.push(id);
+                        update();
+                    });
+                }
+            }
+        }
+
+        addOnClick($('.legend img'));
+        addOnClick($('.legend span'));
+
+        update();
+    });
+</script>
+
+</body>
+</html>
