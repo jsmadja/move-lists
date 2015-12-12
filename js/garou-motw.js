@@ -1,4 +1,4 @@
-game = {
+games.push({
     title: 'Garô: Mark Of The Wolves',
     cover: 'http://www.fightersgeneration.com/games/garou-f.jpg',
     characters: [
@@ -26,19 +26,4 @@ game = {
             ]
         }
     ]
-}
-
-/*
- {
- firstname: '',
- lastname: '',
- face: '',
- moves: [
- {name: '', commands: []},
- {name: '', commands: []},
- {name: '', commands: []},
- {name: '', commands: []},
- {name: '', commands: []}
- ]
- }
- */
+});

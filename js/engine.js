@@ -158,6 +158,6 @@ function drawMoveList(el, character, game) {
 
 function draw(game) {
     game.characters.forEach(function (character) {
-        drawMoveList(character, game);
+        drawMoveList(undefined, character, game);
     });
 }

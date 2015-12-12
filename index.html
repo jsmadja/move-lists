@@ -6,63 +6,35 @@
     <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.js"></script>
+<script type="text/javascript" src="js/jquery-2.1.3.js"></script>
 <script type="text/javascript">
-    var games = new Array();
+    var games = [];
 </script>
 
-<!--
 <script type="text/javascript" src="js/karnov.js"></script>
 <script type="text/javascript" src="js/fatal-fury.js"></script>
 <script type="text/javascript" src="js/fatal-fury-2.js"></script>
 <script type="text/javascript" src="js/fatal-fury-special.js"></script>
--->
 <script type="text/javascript" src="js/fatal-fury-3.js"></script>
-
-<!--
 <script type="text/javascript" src="js/garou-motw.js"></script>
 
--->
 <script type="text/javascript" src="js/engine.js"></script>
 
-<div class="legend" style="display:block;">
-    <table>
-        <tr><td><img src="img/f.png"/></td><td>f</td></tr>
-        <tr><td><img src="img/df.png"/></td><td>df</td></tr>
-        <tr><td><img src="img/d.png"/></td><td>d</td></tr>
-        <tr><td><img src="img/db.png"/></td><td>db</td></tr>
-        <tr><td><img src="img/b.png"/></td><td>b</td></tr>
-        <tr><td><img src="img/ub.png"/></td><td>ub</td></tr>
-        <tr><td><img src="img/u.png"/></td><td>u</td></tr>
-        <tr><td><img src="img/uf.png"/></td><td>uf</td></tr>
-    </table>
-
-    <table>
-        <tr><td><img src="img/qcf.png"/></td><td>qcf</td></tr>
-        <tr><td><img src="img/hcf.png"/></td><td>hcf</td></tr>
-        <tr><td><img src="img/dp.png"/></td><td>dp</td></tr>
-
-        <tr><td><img src="img/qcb.png"/></td><td>qcb</td></tr>
-        <tr><td><img src="img/qfd.png"/></td><td>qfd</td></tr>
-        <tr><td><img src="img/hcb.png"/></td><td>hcb</td></tr>
-        <tr><td><img src="img/rdp.png"/></td><td>rdp</td></tr>
-
-        <tr><td><img src="img/360.png"/></td><td>360</td></tr>
-    </table>
-
-    <table>
-        <tr><td><span class="butA"></span></td><td></td></tr>
-        <tr><td><span class="butB"></span></td><td></td></tr>
-        <tr><td><span class="butC"></span></td><td></td></tr>
-        <tr><td><span class="butD"></span></td><td></td></tr>
-    </table>
-</div>
 <script>
+    function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+                results = regex.exec(location.search);
+        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+
     $(document).ready(function() {
-        games.forEach(function(game){
-            //$('body').append($('<h1>').text(game.title));
-            draw(game);
-        });
+        console.log(games.length);
+
+        var index = getParameterByName("game");
+        if(!index) index = 0;
+        console.log(index);
+        draw(games[index]);
     });
 </script>
 
